@@ -5,6 +5,8 @@ pub mod hadamard;
 pub mod x;
 pub mod z;
 
+pub mod conditional;
+
 pub use ccnot::CCNot;
 pub use cnot::CNot;
 pub use hadamard::Hadamard;

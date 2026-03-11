@@ -9,7 +9,8 @@ pub use history::OpcodeHistory;
 pub struct Circuit {
     pub qubits: usize,
     pub state: Vec<Complex64>,
-    pub commands: Vec<Box<dyn Gate>>
+    pub commands: Vec<Box<dyn Gate>>,
+    pub register: Vec<usize>
 }
 
 #[macro_export]
