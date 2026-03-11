@@ -1,7 +1,7 @@
 use crate::gates::Gate;
 use num_complex::Complex64;
 
-use crate::gclone;
+use crate::{implgate};
 
 pub struct Hadamard {
     pub target: usize,
@@ -27,5 +27,5 @@ impl Gate for Hadamard {
         }
     }
 
-    gclone!(Hadamard,1);
+    implgate!(Hadamard,1);
 }

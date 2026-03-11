@@ -1,5 +1,5 @@
 use crate::gates::Gate;
-use crate::gclone;
+use crate::{implgate};
 
 pub struct Z {
     pub target: usize,
@@ -20,5 +20,5 @@ impl Gate for Z {
     }
 
     
-    gclone!(Z,1);
+    implgate!(Z,1);
 }

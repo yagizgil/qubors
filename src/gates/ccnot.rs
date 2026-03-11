@@ -1,5 +1,5 @@
 use crate::gates::Gate;
-use crate::gclone;
+use crate::{implgate};
 
 pub struct CCNot {
     pub control1: usize,
@@ -27,5 +27,5 @@ impl Gate for CCNot {
     }
 
     
-    gclone!(CCNot,3);
+    implgate!(CCNot,3);
 }

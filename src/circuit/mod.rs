@@ -1,7 +1,10 @@
 pub mod circuit;
+pub mod history;
 
 use num_complex::Complex64;
 use crate::gates::Gate;
+
+pub use history::OpcodeHistory;
 
 pub struct Circuit {
     pub qubits: usize,
